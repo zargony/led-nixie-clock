@@ -103,12 +103,12 @@ Wire Wire Line
 $Comp
 L power:VDD #PWR0110
 U 1 1 5C3A07BC
-P 4800 900
-F 0 "#PWR0110" H 4800 750 50  0001 C CNN
-F 1 "VDD" H 4817 1073 50  0000 C CNN
-F 2 "" H 4800 900 50  0001 C CNN
-F 3 "" H 4800 900 50  0001 C CNN
-	1    4800 900 
+P 4100 900
+F 0 "#PWR0110" H 4100 750 50  0001 C CNN
+F 1 "VDD" H 4117 1073 50  0000 C CNN
+F 2 "" H 4100 900 50  0001 C CNN
+F 3 "" H 4100 900 50  0001 C CNN
+	1    4100 900 
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -445,47 +445,14 @@ Connection ~ 4900 5200
 Wire Wire Line
 	4900 5200 4800 5200
 $Comp
-L Regulator_Linear:LM1117-3.3 U1
-U 1 1 5C415EF9
-P 3900 900
-F 0 "U1" H 3900 1142 50  0000 C CNN
-F 1 "LM1117-3.3" H 3900 1051 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 3900 900 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/lm1117.pdf" H 3900 900 50  0001 C CNN
-	1    3900 900 
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C3
-U 1 1 5C424CF6
-P 4400 1250
-F 0 "C3" H 4515 1296 50  0000 L CNN
-F 1 "10u" H 4515 1205 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4438 1100 50  0001 C CNN
-F 3 "~" H 4400 1250 50  0001 C CNN
-	1    4400 1250
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C4
-U 1 1 5C424ED1
-P 4800 1250
-F 0 "C4" H 4915 1296 50  0000 L CNN
-F 1 "100n" H 4915 1205 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4838 1100 50  0001 C CNN
-F 3 "~" H 4800 1250 50  0001 C CNN
-	1    4800 1250
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:C C2
-U 1 1 5C4295B3
-P 3300 1250
-F 0 "C2" H 3415 1296 50  0000 L CNN
-F 1 "100n" H 3415 1205 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3338 1100 50  0001 C CNN
-F 3 "~" H 3300 1250 50  0001 C CNN
-	1    3300 1250
+U 1 1 5C424CF6
+P 4100 1250
+F 0 "C2" H 4215 1296 50  0000 L CNN
+F 1 "1u" H 4215 1205 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4138 1100 50  0001 C CNN
+F 3 "~" H 4100 1250 50  0001 C CNN
+	1    4100 1250
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -798,44 +765,20 @@ Connection ~ 6300 3100
 Wire Wire Line
 	2900 900  2900 1100
 Wire Wire Line
-	4200 900  4400 900 
+	3800 900  4100 900 
 Wire Wire Line
-	2900 900  3300 900 
+	2900 900  3200 900 
 Wire Wire Line
 	2900 1400 2900 1600
 Wire Wire Line
-	2900 1600 3300 1600
+	4100 1100 4100 900 
+Connection ~ 4100 900 
 Wire Wire Line
-	3300 1100 3300 900 
-Connection ~ 3300 900 
+	3500 1200 3500 1600
 Wire Wire Line
-	3300 900  3600 900 
+	3500 1600 4100 1600
 Wire Wire Line
-	3300 1400 3300 1600
-Connection ~ 3300 1600
-Wire Wire Line
-	3300 1600 3900 1600
-Wire Wire Line
-	4400 1100 4400 900 
-Connection ~ 4400 900 
-Wire Wire Line
-	4400 900  4800 900 
-Wire Wire Line
-	3900 1200 3900 1600
-Connection ~ 3900 1600
-Wire Wire Line
-	3900 1600 4400 1600
-Wire Wire Line
-	4400 1400 4400 1600
-Connection ~ 4400 1600
-Wire Wire Line
-	4400 1600 4800 1600
-Wire Wire Line
-	4800 1400 4800 1600
-Wire Wire Line
-	4800 1100 4800 900 
-Connection ~ 4800 900 
-Connection ~ 2900 1600
+	4100 1400 4100 1600
 Wire Wire Line
 	2500 900  2900 900 
 Connection ~ 2900 900 
@@ -994,4 +937,19 @@ F 3 "~" H 10700 3500 50  0001 C CNN
 	1    10500 3500
 	0    1    1    0   
 $EndComp
+$Comp
+L Regulator_Linear:MCP1700-3302E_SOT23 U1
+U 1 1 5C8BC8BE
+P 3500 900
+F 0 "U1" H 3500 1142 50  0000 C CNN
+F 1 "MCP1700-3302E_SOT23" H 3500 1051 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 3500 1125 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20001826C.pdf" H 3500 900 50  0001 C CNN
+	1    3500 900 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2900 1600 3500 1600
+Connection ~ 2900 1600
+Connection ~ 3500 1600
 $EndSCHEMATC
