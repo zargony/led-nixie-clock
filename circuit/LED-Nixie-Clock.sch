@@ -60,7 +60,6 @@ $EndComp
 NoConn ~ 4200 3100
 NoConn ~ 4200 3500
 NoConn ~ 4200 3600
-NoConn ~ 4200 3800
 NoConn ~ 4200 3900
 NoConn ~ 4200 4000
 NoConn ~ 4200 4100
@@ -73,9 +72,6 @@ NoConn ~ 4200 4700
 NoConn ~ 4200 4800
 NoConn ~ 4200 4900
 NoConn ~ 4200 5000
-NoConn ~ 5500 5000
-NoConn ~ 5500 4900
-NoConn ~ 5500 4800
 NoConn ~ 5500 4500
 NoConn ~ 5500 4400
 NoConn ~ 5500 4300
@@ -1077,4 +1073,76 @@ Text Notes 2050 4000 2    50   ~ 0
 CL=20pF
 Text Notes 2000 5100 2    50   ~ 0
 CL=9pF
+$Comp
+L power:GND #PWR0167
+U 1 1 5CA52352
+P 7400 2200
+F 0 "#PWR0167" H 7400 1950 50  0001 C CNN
+F 1 "GND" H 7405 2027 50  0000 C CNN
+F 2 "" H 7400 2200 50  0001 C CNN
+F 3 "" H 7400 2200 50  0001 C CNN
+	1    7400 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VDD #PWR0169
+U 1 1 5CA5EDA9
+P 7400 1000
+F 0 "#PWR0169" H 7400 850 50  0001 C CNN
+F 1 "VDD" H 7417 1173 50  0000 C CNN
+F 2 "" H 7400 1000 50  0001 C CNN
+F 3 "" H 7400 1000 50  0001 C CNN
+	1    7400 1000
+	1    0    0    -1  
+$EndComp
+Text Label 8500 1300 2    50   ~ 0
+RESET
+Text Label 8500 1600 2    50   ~ 0
+SWDIO-JTMS
+Text Label 8500 1500 2    50   ~ 0
+SWCLK-JTCK
+Text Label 8500 1700 2    50   ~ 0
+SWO-JTDO
+$Comp
+L Connector:Conn_ARM_JTAG_SWD_10 J2
+U 1 1 5CA91980
+P 7400 1600
+F 0 "J2" H 6960 1646 50  0000 R CNN
+F 1 "Debug" H 6960 1555 50  0000 R CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_2x05_P1.27mm_Vertical_SMD" H 7450 1050 50  0001 L TNN
+F 3 "http://infocenter.arm.com/help/topic/com.arm.doc.faqs/attached/13634/cortex_debug_connectors.pdf" V 7050 350 50  0001 C CNN
+	1    7400 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7900 1300 8500 1300
+Wire Wire Line
+	7900 1500 8500 1500
+Wire Wire Line
+	7900 1600 8500 1600
+Wire Wire Line
+	7900 1700 8500 1700
+Wire Wire Line
+	7900 1800 8500 1800
+Wire Wire Line
+	7300 2200 7400 2200
+Connection ~ 7400 2200
+Wire Wire Line
+	5500 4800 6100 4800
+Text Label 6100 4800 2    50   ~ 0
+SWDIO-JTMS
+Text Label 8500 1800 2    50   ~ 0
+JTDI
+Wire Wire Line
+	5500 4900 6100 4900
+Text Label 6100 4900 2    50   ~ 0
+SWCLK-JTCK
+Wire Wire Line
+	5500 5000 5900 5000
+Text Label 5900 5000 2    50   ~ 0
+JTDI
+Wire Wire Line
+	4200 3800 3600 3800
+Text Label 3600 3800 0    50   ~ 0
+SWO-JTDO
 $EndSCHEMATC
