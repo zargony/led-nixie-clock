@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /Users/zargony/Projects/LED-Nixie-Clock/circuit/LED-Nixie-Clock.sch)
-    (date "Monday, 21 January 2019 at 19:48:24")
+    (date "Tuesday, 22 January 2019 at 12:48:17")
     (tool "Eeschema (5.0.1-3-g963ef8bb5)")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -123,7 +123,7 @@
       (tstamp 5C4296AB))
     (comp (ref Y1)
       (value 8MHz)
-      (footprint Crystal:Crystal_SMD_HC49-SD)
+      (footprint Crystal:Crystal_SMD_5032-2Pin_5.0x3.2mm)
       (datasheet ~)
       (libsource (lib Device) (part Crystal) (description "Two pin crystal"))
       (sheetpath (names /) (tstamps /))
