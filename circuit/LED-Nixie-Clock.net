@@ -1,8 +1,8 @@
 (export (version D)
   (design
     (source /Users/zargony/Projects/LED-Nixie-Clock/circuit/LED-Nixie-Clock.sch)
-    (date "Tuesday, 22 January 2019 at 17:25:27")
-    (tool "Eeschema (5.0.1-3-g963ef8bb5)")
+    (date "Tuesday, 22 October 2019 at 10:54:31")
+    (tool "Eeschema (5.1.4-0-10_14)")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
         (title)
@@ -1440,17 +1440,14 @@
   (libparts
     (libpart (lib Connector) (part Conn_ARM_JTAG_SWD_10)
       (description "Cortex Debug Connector, standard ARM Cortex-M SWD and JTAG interface")
-      (docs http://infocenter.arm.com/help/topic/com.arm.doc.faqs/attached/13634/cortex_debug_connectors.pdf)
+      (docs http://infocenter.arm.com/help/topic/com.arm.doc.ddi0314h/DDI0314H_coresight_components_trm.pdf)
       (footprints
-        (fp Pin?Header*)
-        (fp *IDC*)
-        (fp Conn*:*_2x*))
+        (fp PinHeader?2x05?P1.27mm*))
       (fields
         (field (name Reference) J)
-        (field (name Value) Conn_ARM_JTAG_SWD_10)
-        (field (name Footprint) Connector_PinHeader_1.27mm:PinHeader_2x05_P1.27mm_Vertical_SMD))
+        (field (name Value) Conn_ARM_JTAG_SWD_10))
       (pins
-        (pin (num 1) (name VCC) (type power_in))
+        (pin (num 1) (name VTref) (type power_in))
         (pin (num 2) (name SWDIO/TMS) (type BiDi))
         (pin (num 3) (name GND) (type power_in))
         (pin (num 4) (name SWDCLK/TCK) (type output))
@@ -1458,7 +1455,7 @@
         (pin (num 6) (name SWO/TDO) (type input))
         (pin (num 7) (name KEY) (type NotConnected))
         (pin (num 8) (name NC/TDI) (type output))
-        (pin (num 9) (name GNDDetect) (type input))
+        (pin (num 9) (name GNDDetect) (type passive))
         (pin (num 10) (name ~RESET~) (type openCol))))
     (libpart (lib Connector) (part TestPoint)
       (description "test point")
@@ -1648,7 +1645,7 @@
         (alias MCP1700-3302E_SOT23)
         (alias MCP1700-5002E_SOT23))
       (description "250mA Low Quiscent Current LDO, 3.0V output, SOT-23")
-      (docs http://ww1.microchip.com/downloads/en/DeviceDoc/20001826C.pdf)
+      (docs http://ww1.microchip.com/downloads/en/DeviceDoc/20001826D.pdf)
       (footprints
         (fp SOT?23*))
       (fields
@@ -1661,6 +1658,7 @@
         (pin (num 3) (name VI) (type power_in))))
     (libpart (lib Switch) (part SW_Push)
       (description "Push button switch, generic, two pins")
+      (docs ~)
       (fields
         (field (name Reference) SW)
         (field (name Value) SW_Push))
