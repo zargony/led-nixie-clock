@@ -73,10 +73,6 @@ NoConn ~ 4200 4800
 NoConn ~ 4200 4900
 NoConn ~ 4200 5000
 NoConn ~ 5500 4300
-NoConn ~ 5500 4200
-NoConn ~ 5500 4100
-NoConn ~ 5500 4000
-NoConn ~ 5500 3900
 NoConn ~ 5500 3800
 NoConn ~ 5500 3600
 $Comp
@@ -866,19 +862,8 @@ Connection ~ 3300 1600
 $Comp
 L Mechanical:MountingHole H6
 U 1 1 5C8F568C
-P 600 7700
-F 0 "H6" H 700 7746 50  0000 L CNN
-F 1 "MountingHole" H 700 7655 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3_ISO7380" H 600 7700 50  0001 C CNN
-F 3 "~" H 600 7700 50  0001 C CNN
-	1    600  7700
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole H5
-U 1 1 5C8F5A1B
 P 600 7500
-F 0 "H5" H 700 7546 50  0000 L CNN
+F 0 "H6" H 700 7546 50  0000 L CNN
 F 1 "MountingHole" H 700 7455 50  0000 L CNN
 F 2 "MountingHole:MountingHole_3.2mm_M3_ISO7380" H 600 7500 50  0001 C CNN
 F 3 "~" H 600 7500 50  0001 C CNN
@@ -886,10 +871,10 @@ F 3 "~" H 600 7500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole H4
-U 1 1 5C8F5ADF
+L Mechanical:MountingHole H5
+U 1 1 5C8F5A1B
 P 600 7300
-F 0 "H4" H 700 7346 50  0000 L CNN
+F 0 "H5" H 700 7346 50  0000 L CNN
 F 1 "MountingHole" H 700 7255 50  0000 L CNN
 F 2 "MountingHole:MountingHole_3.2mm_M3_ISO7380" H 600 7300 50  0001 C CNN
 F 3 "~" H 600 7300 50  0001 C CNN
@@ -897,10 +882,10 @@ F 3 "~" H 600 7300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole H3
-U 1 1 5C8F5CA1
+L Mechanical:MountingHole H4
+U 1 1 5C8F5ADF
 P 600 7100
-F 0 "H3" H 700 7146 50  0000 L CNN
+F 0 "H4" H 700 7146 50  0000 L CNN
 F 1 "MountingHole" H 700 7055 50  0000 L CNN
 F 2 "MountingHole:MountingHole_3.2mm_M3_ISO7380" H 600 7100 50  0001 C CNN
 F 3 "~" H 600 7100 50  0001 C CNN
@@ -908,10 +893,10 @@ F 3 "~" H 600 7100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole H2
-U 1 1 5C8F5DF1
+L Mechanical:MountingHole H3
+U 1 1 5C8F5CA1
 P 600 6900
-F 0 "H2" H 700 6946 50  0000 L CNN
+F 0 "H3" H 700 6946 50  0000 L CNN
 F 1 "MountingHole" H 700 6855 50  0000 L CNN
 F 2 "MountingHole:MountingHole_3.2mm_M3_ISO7380" H 600 6900 50  0001 C CNN
 F 3 "~" H 600 6900 50  0001 C CNN
@@ -919,14 +904,25 @@ F 3 "~" H 600 6900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole H1
-U 1 1 5C8F5EE9
+L Mechanical:MountingHole H2
+U 1 1 5C8F5DF1
 P 600 6700
-F 0 "H1" H 700 6746 50  0000 L CNN
+F 0 "H2" H 700 6746 50  0000 L CNN
 F 1 "MountingHole" H 700 6655 50  0000 L CNN
 F 2 "MountingHole:MountingHole_3.2mm_M3_ISO7380" H 600 6700 50  0001 C CNN
 F 3 "~" H 600 6700 50  0001 C CNN
 	1    600  6700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 5C8F5EE9
+P 600 6500
+F 0 "H1" H 700 6546 50  0000 L CNN
+F 1 "MountingHole" H 700 6455 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_ISO7380" H 600 6500 50  0001 C CNN
+F 3 "~" H 600 6500 50  0001 C CNN
+	1    600  6500
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -1172,4 +1168,243 @@ $EndComp
 Wire Wire Line
 	6300 3700 6100 3700
 Connection ~ 6300 3700
+$Comp
+L power:VDD #PWR01
+U 1 1 5DB4A1AC
+P 7000 4950
+F 0 "#PWR01" H 7000 4800 50  0001 C CNN
+F 1 "VDD" H 7017 5123 50  0000 C CNN
+F 2 "" H 7000 4950 50  0001 C CNN
+F 3 "" H 7000 4950 50  0001 C CNN
+	1    7000 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR03
+U 1 1 5DB4A1B2
+P 7000 5850
+F 0 "#PWR03" H 7000 5600 50  0001 C CNN
+F 1 "GND" H 7005 5677 50  0000 C CNN
+F 2 "" H 7000 5850 50  0001 C CNN
+F 3 "" H 7000 5850 50  0001 C CNN
+	1    7000 5850
+	1    0    0    -1  
+$EndComp
+Text Label 7400 5350 2    50   ~ 0
+BTN0
+$Comp
+L Switch:SW_Push SW2
+U 1 1 5DB4A1B9
+P 7000 5650
+F 0 "SW2" V 7050 6000 50  0000 R CNN
+F 1 "Button \"Back\"" V 6950 6350 50  0000 R CNN
+F 2 "Button_Switch_SMD:SW_Push_1P1T_NO_6x6mm_H9.5mm" H 7000 5850 50  0001 C CNN
+F 3 "" H 7000 5850 50  0001 C CNN
+	1    7000 5650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7000 5350 7400 5350
+$Comp
+L Device:R R9
+U 1 1 5DB6541A
+P 7000 5100
+F 0 "R9" V 6793 5100 50  0000 C CNN
+F 1 "100k" V 6884 5100 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6930 5100 50  0001 C CNN
+F 3 "~" H 7000 5100 50  0001 C CNN
+	1    7000 5100
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7000 5250 7000 5350
+Connection ~ 7000 5350
+Wire Wire Line
+	7000 5350 7000 5450
+$Comp
+L power:VDD #PWR05
+U 1 1 5DBB3047
+P 8000 4950
+F 0 "#PWR05" H 8000 4800 50  0001 C CNN
+F 1 "VDD" H 8017 5123 50  0000 C CNN
+F 2 "" H 8000 4950 50  0001 C CNN
+F 3 "" H 8000 4950 50  0001 C CNN
+	1    8000 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR06
+U 1 1 5DBB304D
+P 8000 5850
+F 0 "#PWR06" H 8000 5600 50  0001 C CNN
+F 1 "GND" H 8005 5677 50  0000 C CNN
+F 2 "" H 8000 5850 50  0001 C CNN
+F 3 "" H 8000 5850 50  0001 C CNN
+	1    8000 5850
+	1    0    0    -1  
+$EndComp
+Text Label 8400 5350 2    50   ~ 0
+BTN1
+$Comp
+L Switch:SW_Push SW3
+U 1 1 5DBB3054
+P 8000 5650
+F 0 "SW3" V 8050 6000 50  0000 R CNN
+F 1 "Button \"-\"" V 7950 6250 50  0000 R CNN
+F 2 "Button_Switch_SMD:SW_Push_1P1T_NO_6x6mm_H9.5mm" H 8000 5850 50  0001 C CNN
+F 3 "" H 8000 5850 50  0001 C CNN
+	1    8000 5650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8000 5350 8400 5350
+$Comp
+L Device:R R10
+U 1 1 5DBB305B
+P 8000 5100
+F 0 "R10" V 7793 5100 50  0000 C CNN
+F 1 "100k" V 7884 5100 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 7930 5100 50  0001 C CNN
+F 3 "~" H 8000 5100 50  0001 C CNN
+	1    8000 5100
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8000 5250 8000 5350
+Connection ~ 8000 5350
+Wire Wire Line
+	8000 5350 8000 5450
+$Comp
+L power:VDD #PWR07
+U 1 1 5DBBD035
+P 9000 4950
+F 0 "#PWR07" H 9000 4800 50  0001 C CNN
+F 1 "VDD" H 9017 5123 50  0000 C CNN
+F 2 "" H 9000 4950 50  0001 C CNN
+F 3 "" H 9000 4950 50  0001 C CNN
+	1    9000 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR08
+U 1 1 5DBBD03B
+P 9000 5850
+F 0 "#PWR08" H 9000 5600 50  0001 C CNN
+F 1 "GND" H 9005 5677 50  0000 C CNN
+F 2 "" H 9000 5850 50  0001 C CNN
+F 3 "" H 9000 5850 50  0001 C CNN
+	1    9000 5850
+	1    0    0    -1  
+$EndComp
+Text Label 9400 5350 2    50   ~ 0
+BTN2
+$Comp
+L Switch:SW_Push SW4
+U 1 1 5DBBD042
+P 9000 5650
+F 0 "SW4" V 9050 6000 50  0000 R CNN
+F 1 "Button \"+\"" V 8950 6250 50  0000 R CNN
+F 2 "Button_Switch_SMD:SW_Push_1P1T_NO_6x6mm_H9.5mm" H 9000 5850 50  0001 C CNN
+F 3 "" H 9000 5850 50  0001 C CNN
+	1    9000 5650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9000 5350 9400 5350
+$Comp
+L Device:R R11
+U 1 1 5DBBD049
+P 9000 5100
+F 0 "R11" V 8793 5100 50  0000 C CNN
+F 1 "100k" V 8884 5100 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 8930 5100 50  0001 C CNN
+F 3 "~" H 9000 5100 50  0001 C CNN
+	1    9000 5100
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9000 5250 9000 5350
+Connection ~ 9000 5350
+Wire Wire Line
+	9000 5350 9000 5450
+$Comp
+L power:VDD #PWR09
+U 1 1 5DBDB7B8
+P 10000 4950
+F 0 "#PWR09" H 10000 4800 50  0001 C CNN
+F 1 "VDD" H 10017 5123 50  0000 C CNN
+F 2 "" H 10000 4950 50  0001 C CNN
+F 3 "" H 10000 4950 50  0001 C CNN
+	1    10000 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR010
+U 1 1 5DBDB7BE
+P 10000 5850
+F 0 "#PWR010" H 10000 5600 50  0001 C CNN
+F 1 "GND" H 10005 5677 50  0000 C CNN
+F 2 "" H 10000 5850 50  0001 C CNN
+F 3 "" H 10000 5850 50  0001 C CNN
+	1    10000 5850
+	1    0    0    -1  
+$EndComp
+Text Label 10400 5350 2    50   ~ 0
+BTN3
+$Comp
+L Switch:SW_Push SW5
+U 1 1 5DBDB7C5
+P 10000 5650
+F 0 "SW5" V 10050 6000 50  0000 R CNN
+F 1 "Button \"Ok\"" V 9950 6250 50  0000 R CNN
+F 2 "Button_Switch_SMD:SW_Push_1P1T_NO_6x6mm_H9.5mm" H 10000 5850 50  0001 C CNN
+F 3 "" H 10000 5850 50  0001 C CNN
+	1    10000 5650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	10000 5350 10400 5350
+$Comp
+L Device:R R12
+U 1 1 5DBDB7CC
+P 10000 5100
+F 0 "R12" V 9793 5100 50  0000 C CNN
+F 1 "100k" V 9884 5100 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 9930 5100 50  0001 C CNN
+F 3 "~" H 10000 5100 50  0001 C CNN
+	1    10000 5100
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	10000 5250 10000 5350
+Connection ~ 10000 5350
+Wire Wire Line
+	10000 5350 10000 5450
+Wire Wire Line
+	5500 3900 6100 3900
+Wire Wire Line
+	5500 4000 6100 4000
+Wire Wire Line
+	5500 4100 6100 4100
+Wire Wire Line
+	5500 4200 6100 4200
+Text Label 6100 3900 2    50   ~ 0
+BTN3
+Text Label 6100 4000 2    50   ~ 0
+BTN2
+Text Label 6100 4100 2    50   ~ 0
+BTN1
+Text Label 6100 4200 2    50   ~ 0
+BTN0
+$Comp
+L Mechanical:MountingHole H7
+U 1 1 5DBF1BFA
+P 600 7700
+F 0 "H7" H 700 7746 50  0000 L CNN
+F 1 "MountingHole" H 700 7655 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_ISO7380" H 600 7700 50  0001 C CNN
+F 3 "~" H 600 7700 50  0001 C CNN
+	1    600  7700
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
