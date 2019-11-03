@@ -860,10 +860,10 @@ Wire Wire Line
 Connection ~ 2700 1600
 Connection ~ 3300 1600
 $Comp
-L Mechanical:MountingHole H6
+L Mechanical:MountingHole H10
 U 1 1 5C8F568C
 P 600 7500
-F 0 "H6" H 700 7546 50  0000 L CNN
+F 0 "H10" H 700 7546 50  0000 L CNN
 F 1 "MountingHole" H 700 7455 50  0000 L CNN
 F 2 "MountingHole:MountingHole_3.2mm_M3_ISO7380" H 600 7500 50  0001 C CNN
 F 3 "~" H 600 7500 50  0001 C CNN
@@ -871,21 +871,10 @@ F 3 "~" H 600 7500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole H5
+L Mechanical:MountingHole H8
 U 1 1 5C8F5A1B
-P 600 7300
-F 0 "H5" H 700 7346 50  0000 L CNN
-F 1 "MountingHole" H 700 7255 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3_ISO7380" H 600 7300 50  0001 C CNN
-F 3 "~" H 600 7300 50  0001 C CNN
-	1    600  7300
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole H4
-U 1 1 5C8F5ADF
 P 600 7100
-F 0 "H4" H 700 7146 50  0000 L CNN
+F 0 "H8" H 700 7146 50  0000 L CNN
 F 1 "MountingHole" H 700 7055 50  0000 L CNN
 F 2 "MountingHole:MountingHole_3.2mm_M3_ISO7380" H 600 7100 50  0001 C CNN
 F 3 "~" H 600 7100 50  0001 C CNN
@@ -893,10 +882,10 @@ F 3 "~" H 600 7100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole H3
-U 1 1 5C8F5CA1
+L Mechanical:MountingHole H7
+U 1 1 5C8F5ADF
 P 600 6900
-F 0 "H3" H 700 6946 50  0000 L CNN
+F 0 "H7" H 700 6946 50  0000 L CNN
 F 1 "MountingHole" H 700 6855 50  0000 L CNN
 F 2 "MountingHole:MountingHole_3.2mm_M3_ISO7380" H 600 6900 50  0001 C CNN
 F 3 "~" H 600 6900 50  0001 C CNN
@@ -904,25 +893,36 @@ F 3 "~" H 600 6900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole H2
-U 1 1 5C8F5DF1
-P 600 6700
-F 0 "H2" H 700 6746 50  0000 L CNN
-F 1 "MountingHole" H 700 6655 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3_ISO7380" H 600 6700 50  0001 C CNN
-F 3 "~" H 600 6700 50  0001 C CNN
-	1    600  6700
+L Mechanical:MountingHole H4
+U 1 1 5C8F5CA1
+P 600 6300
+F 0 "H4" H 700 6346 50  0000 L CNN
+F 1 "MountingHole" H 700 6255 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_ISO7380" H 600 6300 50  0001 C CNN
+F 3 "~" H 600 6300 50  0001 C CNN
+	1    600  6300
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole H1
+L Mechanical:MountingHole H3
+U 1 1 5C8F5DF1
+P 600 6100
+F 0 "H3" H 700 6146 50  0000 L CNN
+F 1 "MountingHole" H 700 6055 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_ISO7380" H 600 6100 50  0001 C CNN
+F 3 "~" H 600 6100 50  0001 C CNN
+	1    600  6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
 U 1 1 5C8F5EE9
-P 600 6500
-F 0 "H1" H 700 6546 50  0000 L CNN
-F 1 "MountingHole" H 700 6455 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3_ISO7380" H 600 6500 50  0001 C CNN
-F 3 "~" H 600 6500 50  0001 C CNN
-	1    600  6500
+P 600 5900
+F 0 "H2" H 700 5946 50  0000 L CNN
+F 1 "MountingHole" H 700 5855 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_ISO7380" H 600 5900 50  0001 C CNN
+F 3 "~" H 600 5900 50  0001 C CNN
+	1    600  5900
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -1397,14 +1397,58 @@ BTN1
 Text Label 6100 4200 2    50   ~ 0
 BTN0
 $Comp
-L Mechanical:MountingHole H7
+L Mechanical:MountingHole H11
 U 1 1 5DBF1BFA
 P 600 7700
-F 0 "H7" H 700 7746 50  0000 L CNN
+F 0 "H11" H 700 7746 50  0000 L CNN
 F 1 "MountingHole" H 700 7655 50  0000 L CNN
 F 2 "MountingHole:MountingHole_3.2mm_M3_ISO7380" H 600 7700 50  0001 C CNN
 F 3 "~" H 600 7700 50  0001 C CNN
 	1    600  7700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 5DC3D8E0
+P 600 5700
+F 0 "H1" H 700 5746 50  0000 L CNN
+F 1 "MountingHole" H 700 5655 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_ISO7380" H 600 5700 50  0001 C CNN
+F 3 "~" H 600 5700 50  0001 C CNN
+	1    600  5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H5
+U 1 1 5DC3DBF4
+P 600 6500
+F 0 "H5" H 700 6546 50  0000 L CNN
+F 1 "MountingHole" H 700 6455 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_ISO7380" H 600 6500 50  0001 C CNN
+F 3 "~" H 600 6500 50  0001 C CNN
+	1    600  6500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H6
+U 1 1 5DC3DFF6
+P 600 6700
+F 0 "H6" H 700 6746 50  0000 L CNN
+F 1 "MountingHole" H 700 6655 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_ISO7380" H 600 6700 50  0001 C CNN
+F 3 "~" H 600 6700 50  0001 C CNN
+	1    600  6700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H9
+U 1 1 5DC3E54C
+P 600 7300
+F 0 "H9" H 700 7346 50  0000 L CNN
+F 1 "MountingHole" H 700 7255 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_ISO7380" H 600 7300 50  0001 C CNN
+F 3 "~" H 600 7300 50  0001 C CNN
+	1    600  7300
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
